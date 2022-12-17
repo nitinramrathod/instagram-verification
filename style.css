@@ -1,0 +1,129 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Josefin+Sans:ital,wght@1,300&family=Rubik+Distressed&family=Secular+One&family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;   
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 65px;
+    background: #F5F6F7;
+    
+}
+.user-form{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input input {
+    width: 100%;
+    border: .5px solid rgba(128, 128, 128, 0.598);
+    border-radius: 5px;
+    flex: 1 0 auto;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+    height: 40px;
+    background: rgba(110, 110, 110, 0.035);
+}
+button{
+    border-radius: 5px;
+    border: 2px solid #0095F6;
+    background: #0095F6;
+    color: aliceblue;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 500;
+}
+button:hover{
+    background:rgb(255, 255, 255);
+    color:#0095F6;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.logo img{
+    width: 80%;
+}
+
+.text-box{
+    padding-bottom: 40px;
+}
+.text-box p{
+    text-align: center;
+    line-height: 30px;
+}
+
+.text-box h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0095F6;
+    font-size: 20px;
+    position: relative;
+}
+.verified{
+    position: absolute;
+    font-size: 40px;
+    color: #0095F6;
+    bottom: -7px;
+    right: 26px;
+
+}
+
+.get-app{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.get-app .app-btn{
+    display: flex;
+    gap: 15px;
+}
+.get-app p{
+    font-size: 14px;
+}
+ .app-btn img{
+    width: 136px;
+}
+
+
+/* footer  */
+footer{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.foo-content{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+}
+.foo-content span{
+    text-align: center;
+    font-size: 13px;
+    color: #8E8E8E;
+}
